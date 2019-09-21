@@ -1,16 +1,11 @@
 #!/bin/bash
 
-# This script sample is part of "Learn Azure in a Month of Lunches" (Manning
-# Publications) by Iain Foulds.
-#
-# This sample script covers the exercises from chapter 7 of the book. For more
-# information and context to these commands, read a sample of the book and
-# purchase at https://www.manning.com/books/learn-azure-in-a-month-of-lunches
-#
-# This script sample is released under the MIT license. For more information,
-# see https://github.com/fouldsy/azure-mol-samples/blob/master/LICENSE
 
 # Create a resource group
+az login
+
+az account set --subscription faa17e57-ec95-4169-ba7a-ee7c2f41a0aa
+
 az group create --name azuremolchapter7az --location westeurope
 
 # Create a public IP address

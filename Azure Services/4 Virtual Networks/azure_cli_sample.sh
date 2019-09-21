@@ -1,5 +1,10 @@
 #!/bin/bash
 
+
+az login
+
+az account set --subscription faa17e57-ec95-4169-ba7a-ee7c2f41a0aa
+
 # Create a resource group
 az group create --name azuremolchapter5 --location eastus
 
